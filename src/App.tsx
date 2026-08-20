@@ -12,23 +12,18 @@ import { NavLockProvider, useNavLock } from './components/primitives'
 import {
   AgendaSlide,
   ClosingSlide,
-  CommunityGallerySlide,
-  CommunityStorySlide,
   CoverSlide,
-  DeliveryGallerySlide,
-  DeliveryStorySlide,
-  FindingsSlide,
-  NextStepsSlide,
-  ScopeSlide,
-  StoreGallerySlide,
-  StoreStorySlide,
+  DegustacionSlide,
+  GuanoSlide,
+  HicaqueSlide,
+  SorteoSlide,
   SummarySlide,
-  TeamSlide,
-  VideoSlide,
+  TerencioGallerySlide,
+  TerencioStorySlide,
 } from './components/slides'
 import { AGENDA } from './data/content'
 
-const TOTAL = 15
+const TOTAL = 10
 
 function useFullscreen() {
   const [on, setOn] = useState(false)
@@ -124,19 +119,14 @@ function Presentation() {
     () => [
       <CoverSlide key="0" />,
       <AgendaSlide key="1" goTo={goTo} />,
-      <ScopeSlide key="2" />,
       <SummarySlide key="3" goTo={goTo} />,
-      <CommunityStorySlide key="4" goTo={goTo} />,
-      <CommunityGallerySlide key="5" />,
-      <DeliveryStorySlide key="6" goTo={goTo} />,
-      <DeliveryGallerySlide key="7" />,
-      <StoreStorySlide key="8" goTo={goTo} />,
-      <StoreGallerySlide key="9" />,
-      <VideoSlide key="10" />,
-      <TeamSlide key="11" />,
-      <FindingsSlide key="12" />,
-      <NextStepsSlide key="13" />,
-      <ClosingSlide key="14" goTo={goTo} />,
+      <DegustacionSlide key="4" />,
+      <TerencioStorySlide key="5" goTo={goTo} />,
+      <TerencioGallerySlide key="6" />,
+      <SorteoSlide key="7" />,
+      <GuanoSlide key="8" />,
+      <HicaqueSlide key="9" />,
+      <ClosingSlide key="10" goTo={goTo} />,
     ],
     [goTo],
   )
