@@ -29,11 +29,20 @@ export const ACTIVITIES = [
     subtitle: 'Miércoles de tercera · café para los clientes',
     description:
       'En sucursal recibimos a nuestros clientes con café, galleta y degustación de Colágeno Adiuvo. Una mañana para consentir, especialmente a nuestros clientes de la tercera edad.',
-    photos: numbered('1', [
-      'Clientes disfrutando el café en sucursal.',
-      'Estación de café para el Miércoles de tercera.',
-      'Excelente afluencia durante la actividad.',
-    ]),
+    photos: [
+      {
+        src: asset('photos/1/afluencia.jpg'),
+        caption: 'Excelente afluencia durante la actividad.',
+      },
+      {
+        src: asset('photos/1/cliente.jpg'),
+        caption: 'Clientes disfrutando el café en sucursal.',
+      },
+      {
+        src: asset('photos/1/estacion.jpg'),
+        caption: 'Estación de café para el Miércoles de tercera.',
+      },
+    ],
     slideIndex: 3,
   },
   {
