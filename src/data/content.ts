@@ -30,7 +30,6 @@ export const ACTIVITIES = [
     description:
       'En sucursal recibimos a nuestros clientes con café, galleta y degustación de Colágeno Adiuvo. Una mañana para consentir, especialmente a nuestros clientes de la tercera edad.',
     photos: numbered('1', [
-      'Miércoles de tercera: café y galleta con nuestras clientas.',
       'Clientes disfrutando el café en sucursal.',
       'Estación de café para el Miércoles de tercera.',
       'Excelente afluencia durante la actividad.',

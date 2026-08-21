@@ -115,7 +115,7 @@ export function DegustacionSlide() {
       <Title>{activity.title}</Title>
       <p className="mt-2 text-lg text-gold/90">{activity.subtitle}</p>
       <p className="mt-3 max-w-3xl text-cream/75">{activity.description}</p>
-      <div className="mt-5 grid min-h-0 flex-1 grid-cols-2 grid-rows-2 gap-2">
+      <div className="mt-5 grid min-h-0 flex-1 grid-cols-3 gap-2">
         {activity.photos.map((photo, i) => (
           <PhotoCard
             key={photo.src}
